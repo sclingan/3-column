@@ -32,12 +32,12 @@ main{
 }
 
 #sedans-icon{
-    margin: 10% 0 10% 10%;
+    margin: 10% 0 10% 15%;
 }
 
 #sedans-button{
     border-radius: 30px;
-    margin: 15% 0 20% 10%;
+    margin: 15% 0 20% 11%;
     padding: 4% 10%;
     background-color:  hsl(0, 0%, 95%);
     color: hsl(31, 77%, 52%);
@@ -52,12 +52,12 @@ main{
 }
 
 #suvs-icon{
-    margin: 10% 0 10% 10%;
+    margin: 10% 0 10% 11%;
 }
 
 #suvs-button{
     border-radius: 30px;
-    margin: 15% 0 20% 10%;
+    margin: 15% 0 20% 11%;
     padding: 4% 10%;
     background-color: hsl(0, 0%, 95%);
     color: hsl(184, 100%, 22%);
@@ -74,12 +74,12 @@ main{
 }
 
 #luxury-icon{
-    margin: 10% 0 10% 10%;
+    margin: 10% 0 10% 11%;
 }
 
 #luxury-button{
     border-radius: 30px;
-    margin: 15% 0 20% 10%;
+    margin: 15% 0 20% 11%;
     padding: 4% 10%;
     background-color: hsl(0, 0%, 95%);
     color: hsl(179, 100%, 13%);    /* this doesn't seem right, color not 'popping'*/
@@ -91,7 +91,7 @@ main{
     color: hsl(0, 0%, 95%);
     font-family: Big Shoulders Display;
     font-weight: 700;
-    margin: 5% 0 10% 10%;
+    margin: 5% 0 10% 11%;
     font-size: 50px;
     letter-spacing: 2px;
 }
@@ -100,7 +100,7 @@ main{
     color:  hsla(0, 0%, 100%, 0.75);
     font-family: Lexend Deca;
     font-weight: 400;
-    margin: 5% 20% 10% 10%;
+    margin: 5% 20% 10% 11%;
     letter-spacing: 2px; /* double check this, it works but words after commas should have spaces*/
     line-height: 30px;
 }
