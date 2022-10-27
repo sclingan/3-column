@@ -1,0 +1,115 @@
+/*TODO: 
+   Rename everything to a naming standard(BEM)
+   check font-size on buttons
+   move everything over to right on cards, margin-left
+   check font-color on buttons
+   adjust button size, not quite right
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 1440px;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#sedans{
+    background-color:  hsl(31, 77%, 52%);
+    margin: 10% 0% 10% 20%;   
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+#sedans-icon{
+    margin: 10% 0 10% 10%;
+}
+
+#sedans-button{
+    border-radius: 30px;
+    margin: 15% 0 20% 10%;
+    padding: 4% 10%;
+    background-color:  hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    border: none;
+    font-size: 18px;
+}
+
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+    margin: 10% 0 10% 0;
+    border: none;
+}
+
+#suvs-icon{
+    margin: 10% 0 10% 10%;
+}
+
+#suvs-button{
+    border-radius: 30px;
+    margin: 15% 0 20% 10%;
+    padding: 4% 10%;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    border: none;
+    font-size: 18px;
+}
+
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    margin: 10% 0 10% 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+#luxury-icon{
+    margin: 10% 0 10% 10%;
+}
+
+#luxury-button{
+    border-radius: 30px;
+    margin: 15% 0 20% 10%;
+    padding: 4% 10%;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);    /* this doesn't seem right, color not 'popping'*/
+    border: none;
+    font-size: 18px;
+}
+
+#card-title{
+    color: hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    margin: 5% 0 10% 10%;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#card-paragraph{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    font-weight: 400;
+    margin: 5% 20% 10% 10%;
+    letter-spacing: 2px; /* double check this, it works but words after commas should have spaces*/
+    line-height: 30px;
+}
+
+.attribution { 
+    font-size: 11px;
+     text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
