@@ -1,8 +1,6 @@
 /*TODO: 
    Rename everything to a naming standard(BEM)
-   check font-size on buttons
    check font-color on buttons
-   adjust button size, not quite right
 */
 
 *{
@@ -37,7 +35,7 @@ main{
 #sedans-button{
     border-radius: 30px;
     margin: 15% 0 20% 11%;
-    padding: 4% 10%;
+    padding: 4% 11%;
     background-color:  hsl(0, 0%, 95%);
     color: hsl(31, 77%, 52%);
     border: none;
@@ -57,7 +55,7 @@ main{
 #suvs-button{
     border-radius: 30px;
     margin: 15% 0 20% 11%;
-    padding: 4% 10%;
+    padding: 4% 11%;
     background-color: hsl(0, 0%, 95%);
     color: hsl(184, 100%, 22%);
     border: none;
@@ -79,9 +77,9 @@ main{
 #luxury-button{
     border-radius: 30px;
     margin: 15% 0 20% 11%;
-    padding: 4% 10%;
+    padding: 4% 11%;
     background-color: hsl(0, 0%, 95%);
-    color: hsl(179, 100%, 13%);    /* this doesn't seem right, color not 'popping'*/
+    color: hsl(179, 100%, 13%);   
     border: none;
     font-size: 18px;
 }
