@@ -1,6 +1,7 @@
 /*TODO: 
    Rename everything to a naming standard(BEM)
    check font-color on buttons
+   fix button heights, they are not all level, try margin from card-paragraph
 */
 
 *{
@@ -46,6 +47,7 @@ main{
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
     border: solid;
+    padding: 3.4% 11%;
 }
 
 #suvs{
