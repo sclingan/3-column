@@ -132,3 +132,54 @@ main{
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+ /*Responsive*/
+/*TODO
+   width: 375px
+   fix height of cards to fit screen, find out if it is 100vh
+   fix button glitch on hover
+   fix card paragraph margins left and right
+   */
+   
+ @media only screen and (max-width: 600px){
+    body{
+        width: 375px;
+        /*height: 100vh;*/
+    }
+
+    main{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sedans{
+        margin: 10% 10% 0 20%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+
+    #sedans-button{
+        margin-top: 1%;
+    }
+
+    #suvs{
+        margin: 0 10% 0 20%;
+    }
+
+    #suvs-button{
+        margin-top: 1%;
+    }
+
+    #luxury{
+        margin: 0 10% 10% 20%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #luxury-button{
+        margin-top: 1%;
+    }
+ }
