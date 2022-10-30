@@ -1,5 +1,4 @@
 /*TODO: 
-   Rename everything to a naming standard(BEM)
    check font-color on buttons
    fix button heights, they are not all level, try margin from card-paragraph
 */
@@ -21,7 +20,7 @@ main{
     flex-direction: row;
     justify-content: center;
 }
-#sedans{
+#div--sedans{
     background-color:  hsl(31, 77%, 52%);
     margin: 10% 0% 10% 20%;   
     border-top-left-radius: 5px;
@@ -29,11 +28,11 @@ main{
     border: none;
 }
 
-#sedans-icon{
-    margin: 10% 0 10% 15%;
+#img--icon-sedans{
+    margin: 10% 0 10% 10%;
 }
 
-#sedans-button{
+#input--button-sedans{
     border-radius: 30px;
     margin: 15% 0 20% 11%;
     padding: 4% 11%;
@@ -43,24 +42,24 @@ main{
     font-size: 18px;
 }
 
-#sedans-button:hover{
+#input--button-sedans:hover{
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
     border: solid;
     padding: 3.4% 11%;
 }
 
-#suvs{
+#div--suvs{
     background-color: hsl(184, 100%, 22%);
     margin: 10% 0 10% 0;
     border: none;
 }
 
-#suvs-icon{
-    margin: 10% 0 10% 11%;
+#img--icon-suvs{
+    margin: 10% 0 10% 10%;
 }
 
-#suvs-button{
+#input--button-suvs{
     border-radius: 30px;
     margin: 15% 0 20% 11%;
     padding: 4% 11%;
@@ -70,14 +69,14 @@ main{
     font-size: 18px;
 }
 
-#suvs-button:hover{
+#input--button-suvs:hover{
     background-color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
     border: solid;
     padding: 3.2% 11%;
 }
 
-#luxury{
+#div--luxury{
     background-color: hsl(179, 100%, 13%);
     margin: 10% 0 10% 0;
     border-top-right-radius: 5px;
@@ -85,11 +84,11 @@ main{
     border: none;
 }
 
-#luxury-icon{
-    margin: 10% 0 10% 11%;
+#img--icon-luxury{
+    margin: 10% 0 10% 10%;
 }
 
-#luxury-button{
+#input--button-luxury{
     border-radius: 30px;
     margin: 15% 0 20% 11%;
     padding: 4% 11%;
@@ -99,14 +98,14 @@ main{
     font-size: 18px;
 }
 
-#luxury-button:hover{
+#input--button-luxury:hover{
     background-color: hsl(179, 100%, 13%);
     color: hsl(0, 0%, 95%);
     border: solid;
     padding: 3.3% 11%;
 }
 
-#card-title{
+.h1--card-title{
     color: hsl(0, 0%, 95%);
     font-family: Big Shoulders Display;
     font-weight: 700;
@@ -115,7 +114,7 @@ main{
     letter-spacing: 2px;
 }
 
-#card-paragraph{
+.p--card-text{
     color:  hsla(0, 0%, 100%, 0.75);
     font-family: Lexend Deca;
     font-weight: 400;
@@ -140,11 +139,10 @@ main{
    fix button glitch on hover
    fix card paragraph margins left and right
    */
-   
+
  @media only screen and (max-width: 600px){
     body{
         width: 375px;
-        /*height: 100vh;*/
     }
 
     main{
@@ -153,33 +151,37 @@ main{
         align-items: center;
     }
 
-    #sedans{
-        margin: 10% 10% 0 20%;
+    #div--sedans{
+        margin: 10% 5% 0 10%;
         border-bottom-left-radius: 0;
         border-top-right-radius: 5px;
     }
 
-    #sedans-button{
+    #input--button-sedans{
         margin-top: 1%;
     }
 
-    #suvs{
-        margin: 0 10% 0 20%;
+    #div--suvs{
+        margin: 0 5% 0 10%;
     }
 
-    #suvs-button{
+    #input--button-suvs{
         margin-top: 1%;
     }
 
-    #luxury{
-        margin: 0 10% 10% 20%;
+    #div--luxury{
+        margin: 0 5% 10% 10%;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 
-    #luxury-button{
+    #input--button-luxury{
         margin-top: 1%;
+    }
+
+    #p--card-text{
+        margin-right: 15%;
     }
  }
