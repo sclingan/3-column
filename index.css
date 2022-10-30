@@ -1,8 +1,3 @@
-/*TODO: 
-   check font-color on buttons
-   fix button heights, they are not all level, try margin from card-paragraph
-*/
-
 *{
     margin: 0;
     padding: 0;
@@ -40,6 +35,7 @@ main{
     color: hsl(31, 77%, 52%);
     border: none;
     font-size: 18px;
+    transition: background-color 1s;
 }
 
 #input--button-sedans:hover{
@@ -47,6 +43,7 @@ main{
     color: hsl(0, 0%, 95%);
     border: solid;
     padding: 3.4% 11%;
+    cursor: pointer;
 }
 
 #div--suvs{
@@ -61,12 +58,13 @@ main{
 
 #input--button-suvs{
     border-radius: 30px;
-    margin: 15% 0 20% 11%;
+    margin: 13% 0 20% 11%;
     padding: 4% 11%;
     background-color: hsl(0, 0%, 95%);
     color: hsl(184, 100%, 22%);
     border: none;
     font-size: 18px;
+    transition: background-color 1s;
 }
 
 #input--button-suvs:hover{
@@ -74,6 +72,7 @@ main{
     color: hsl(0, 0%, 95%);
     border: solid;
     padding: 3.2% 11%;
+    cursor: pointer;
 }
 
 #div--luxury{
@@ -90,12 +89,13 @@ main{
 
 #input--button-luxury{
     border-radius: 30px;
-    margin: 15% 0 20% 11%;
+    margin: 13% 0 20% 11%;
     padding: 4% 11%;
     background-color: hsl(0, 0%, 95%);
     color: hsl(179, 100%, 13%);   
     border: none;
     font-size: 18px;
+    transition: background-color 1s;
 }
 
 #input--button-luxury:hover{
@@ -103,6 +103,7 @@ main{
     color: hsl(0, 0%, 95%);
     border: solid;
     padding: 3.3% 11%;
+    cursor: pointer;
 }
 
 .h1--card-title{
@@ -118,8 +119,8 @@ main{
     color:  hsla(0, 0%, 100%, 0.75);
     font-family: Lexend Deca;
     font-weight: 400;
-    margin: 5% 20% 10% 11%;
-    letter-spacing: 2px; /* double check this, it works but words after commas should have spaces*/
+    margin: 5% 20% 8% 11%;
+    letter-spacing: 2px; 
     line-height: 30px;
 }
 
@@ -133,12 +134,7 @@ main{
  }
 
  /*Responsive*/
-/*TODO
-   width: 375px
-   fix height of cards to fit screen, find out if it is 100vh
-   fix button glitch on hover
-   fix card paragraph margins left and right
-   */
+
 
  @media only screen and (max-width: 600px){
     body{
@@ -146,7 +142,6 @@ main{
     }
 
     main{
-        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -161,12 +156,21 @@ main{
         margin-top: 1%;
     }
 
+    #input--button-sedans:hover{
+        padding: 3% 11%;
+    }
+
     #div--suvs{
         margin: 0 5% 0 10%;
     }
 
     #input--button-suvs{
         margin-top: 1%;
+    }
+
+
+    #input--button-suvs:hover{
+        padding: 3% 11%;
     }
 
     #div--luxury{
@@ -181,7 +185,14 @@ main{
         margin-top: 1%;
     }
 
+    #input--button-luxury:hover{
+        padding: 3% 11%;
+    }
+
     #p--card-text{
         margin-right: 15%;
     }
  }
+
+ 
+
