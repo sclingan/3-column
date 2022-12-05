@@ -1,0 +1,135 @@
+/* CSS reset */
+/*1. Use a more-intuitive box-sizing model.*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Allow percentage-based heights in the application */
+html, body {
+  height: 100%;
+}
+/* Typographic tweaks! 4. Add accessible line-height 5. Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* CSS variables */
+:root {    
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-darkcyan: hsl(184, 100%, 22%);
+    --primary-Verydarkcyan: hsl(179, 100%, 13%);
+    --primary-transparentwhite: hsla(0, 0%, 100%, 0.75);/*paragraphs*/
+    --primary-verylightgray: hsl(0, 0%, 95%);/*background, headings, buttons*/
+    --ff-body: "Lexend Deca";
+    --weight-400: 400;
+    --weight-700: 700;
+    --ff-headings: "Big Shoulders Display";
+}
+/* TODO: 
+   fix padding-inline
+   align all buttons horizontally
+   active states on buttons
+*/
+main {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    font-family: var(--ff-body);
+    font-weight: var(--weight-400);
+    padding-block: 5.3rem;
+    padding-inline: 1.5em;
+}
+
+.div--card {
+    padding: 15% 11.3% 15% 15%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--primary-orange);
+    padding-bottom: 10%;
+}
+
+.h1--card-title {
+    font-family: var(--ff-headings);
+    font-weight: var(--weight-700);
+    color: var(--primary-verylightgray);
+    font-size: 3.5rem;
+    padding: 1.5rem 0;
+}
+
+.p--card-text {
+    font-family: var(--ff-body);
+    font-weight: var(--weight-400);
+    color: var(--primary-transparentwhite);
+    padding-bottom: 1.3rem;
+}
+
+.input--button {
+    /* color: var(--primary-transparentwhite); */
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.input--button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+}
+
+.suvs {
+    background-color: var(--primary-darkcyan);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.luxury {
+    background-color: var(--primary-Verydarkcyan);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@media (min-width: 600px){
+
+    main {
+        min-height: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div--card {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .suvs {
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+}
+
