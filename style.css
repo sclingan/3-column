@@ -39,8 +39,8 @@ p, h1, h2, h3, h4, h5, h6 {
     --primary-orange: hsl(31, 77%, 52%);
     --primary-darkcyan: hsl(184, 100%, 22%);
     --primary-Verydarkcyan: hsl(179, 100%, 13%);
-    --primary-transparentwhite: hsla(0, 0%, 100%, 0.75);/*paragraphs*/
-    --primary-verylightgray: hsl(0, 0%, 95%);/*background, headings, buttons*/
+    --primary-transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --primary-verylightgray: hsl(0, 0%, 95%);
     --ff-body: "Lexend Deca";
     --weight-400: 400;
     --weight-700: 700;
@@ -111,6 +111,10 @@ main {
     border-top-right-radius: 0;
 }
 
+.attribution {
+    text-align: center;
+}
+
 @media (min-width: 600px){
 
     main {
@@ -122,6 +126,15 @@ main {
     .div--card {
         border-top-right-radius: 0;
         border-bottom-left-radius: 1rem;
+    }
+
+    .p--card-text {
+        padding-right: 3.5rem;
+        padding-bottom: 10%;
+    }
+
+    .input--button {
+        margin-bottom: 10%;
     }
 
     .suvs {
