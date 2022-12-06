@@ -47,10 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
     --ff-headings: "Big Shoulders Display";
 }
 /* TODO: 
-   fix padding-inline
    align all buttons horizontally
-   active states on buttons
-   fix spacing on paragraphs
 */
 main {
     min-height: 100vh;
@@ -85,7 +82,7 @@ main {
 }
 
 .input--button {
-    /* color: var(--primary-transparentwhite); */
+    color: var(--primary-orange);
     background-color: hsl(0, 0%, 100%);
     border: none;
     padding: 1rem 2rem;
@@ -103,6 +100,14 @@ main {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+/* Change button text color */
+.suvs .input--button {
+    color: var(--primary-darkcyan);
+}
+
+.suvs .input--button:hover {
+    color: hsl(0, 0%, 100%);
+}
 
 .luxury {
     background-color: var(--primary-Verydarkcyan);
@@ -111,13 +116,21 @@ main {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+/* Change button text color */
+.luxury .input--button {
+    color: var(--primary-Verydarkcyan);
+}
+
+.luxury .input--button:hover {
+    color: hsl(0, 0%, 100%);
+}
 
 .attribution {
     text-align: center;
 }
 
 @media (min-width: 600px){
-
+    /* Use Grid to align cards */
     main {
         min-height: 0;
         display: grid;
@@ -125,23 +138,33 @@ main {
     }
 
     .div--card {
+        padding: 8% 4.3% 8% 8%;
         border-top-right-radius: 0;
         border-bottom-left-radius: 1rem;
     }
 
+    img {
+        padding-top: 1rem;
+    }
+
+    .h1--card-title {
+        padding-bottom: .5rem;
+        padding-top: 1rem;
+    }
+
     .p--card-text {
-        padding-right: 3.5rem;
-        padding-bottom: 20%;
+        padding-right: 3.4rem;
+        padding-bottom: 15%;
     }
 
     .input--button {
-        margin-bottom: 10%;
+        margin: 10% 0;
     }
-
+    /* Adjust border radius for Desktop */
     .suvs {
         border-bottom-left-radius: 0;
     }
-
+    /* Adjust border radius for Desktop */
     .luxury {
         border-top-right-radius: 1rem;
         border-bottom-left-radius: 0;
