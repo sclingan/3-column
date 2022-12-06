@@ -135,6 +135,7 @@ main {
         min-height: 0;
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
     }
 
     .div--card {
@@ -155,6 +156,8 @@ main {
     .p--card-text {
         padding-right: 3.4rem;
         padding-bottom: 15%;
+        word-break: keep-all;
+        /* min-height: 180px; check this */
     }
 
     .input--button {
