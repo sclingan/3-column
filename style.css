@@ -93,6 +93,8 @@ main {
 .input--button:hover {
     background-color: transparent;
     color: hsl(0, 0%, 100%);
+    margin: -1px;
+    border: .5px solid hsl(0, 0%, 100%);
 }
 
 .suvs {
@@ -138,7 +140,7 @@ main {
     }
 
     .div--card {
-        padding: 8% 4.3% 8% 8%;
+        padding: 8%;
         border-top-right-radius: 0;
         border-bottom-left-radius: 1rem;
     }
@@ -153,8 +155,11 @@ main {
     }
 
     .p--card-text {
-        padding-right: 3.4rem;
-        padding-bottom: 20%;
+        padding-bottom: 30%;
+    }
+
+    .input--button {
+        margin-bottom: 10%;
     }
 
     /* Adjust border radius for Desktop */
