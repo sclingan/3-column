@@ -46,9 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
     --weight-700: 700;
     --ff-headings: "Big Shoulders Display";
 }
-/* TODO: 
-   align all buttons horizontally
-*/
+
 main {
     min-height: 100vh;
     background-color: hsl(0, 0%, 100%);
@@ -131,7 +129,7 @@ main {
     text-align: center;
 }
 
-@media (min-width: 600px){
+@media (min-width: 37.5rem){
     /* Use Grid to align cards */
     main {
         min-height: 0;
@@ -156,6 +154,7 @@ main {
 
     .p--card-text {
         padding-bottom: 30%;
+        max-block-size: 11.25rem;
     }
 
     .input--button {
